@@ -1,0 +1,17 @@
+up:
+    docker-compose up -d
+
+migrate:
+    docker-compose run --rm backend alembic upgrade head
+
+build:
+    docker-compose build
+
+restart:
+    docker-compose restart
+
+down:    
+    docker-compose down
+
+test:
+    ./scripts/test.sh
